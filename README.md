@@ -1,3 +1,15 @@
+> ## Deck 72 CRM — a fork of Twenty
+>
+> This repository is **Deck 72 CRM**, a fork of Twenty, the open-source CRM — the install-native CRM that Deck 72 hosts for the home-service shops it serves. It is **not affiliated with or endorsed by Twenty.com, PBC**. We host Twenty for our clients.
+>
+> **Licence, in plain words:** the Twenty core here is **AGPLv3** plus Twenty's **Application Exception** — a separate work that interacts with this software only through its Application Interfaces (REST / GraphQL APIs, webhooks, SDKs) is not, by itself, governed by the AGPL and may be licensed on its own terms. Files marked `/* @license Enterprise */` are under Twenty's Commercial License; Deck 72 does not use, enable, or depend on those features in production. All upstream licence texts, copyright notices, and attribution files are kept byte-intact.
+>
+> **What lives here:** Twenty and only Twenty — the upstream base at our pinned release, plus a small series of Deck 72 tweak commits (branding, deployment defaults), each prefixed `deck72-tweak:`. The Deck 72 product itself (agents, skills, business logic) is **not** in this repository; it lives in separate private repositories and integrates with a running instance of this CRM exclusively through its public APIs.
+>
+> **Pin:** `twenty/v2.59.3` (upstream commit `94d33cb3da6673c132df1654677bad4b186b90fd`). `main` = the pin plus the tweak series; reproduce our build with `git log <pin>..main --oneline`. Upstream is tracked monthly; each update re-verifies the licence text before the pin moves.
+>
+> ---
+>
 <p align="center">
   <a href="https://www.twenty.com">
     <img src="./packages/twenty-website/public/images/core/logo.svg" width="100px" alt="Twenty logo" />
